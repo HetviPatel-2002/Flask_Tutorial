@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+    <!-- this braces are used for strings -->
+    {% block head %}{% endblock%}
+    <!--template that flask uses the block will be created in the template where going to insert our code on all the other pages that inherit this template.  -->
+
+</head>
+<body>
+    {% block body %}{% endblock%}
+    <!-- the above braces is for the block of code like if else statements, for loops  -->
+</body>
+</html>
